@@ -1,7 +1,4 @@
 export default function getQuotes(count) {
-  return fetch(`futuramaapi.herokuapp.com/api/quotes/${count}`)
-    .then(res => res.json())
-    .then((json) => {
-      return json;
-    });
+  return fetch(`//futuramaapi.herokuapp.com/api/quotes/${count}`)
+    .then(res => res.json());
 }
