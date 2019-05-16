@@ -32,7 +32,17 @@ export default class AllCharacters extends PureComponent {
         this.setState({ totalPages: results.info.pages });
       });
   }
-  
+
+  componentDidUpdate(prevState) {
+    if(prevState.page !== this.state.page) {
+      getCharacters(this.state.page)
+        .then(results => {
+          this.setState({ characters: results.results });
+          this.setState({ totalPages: results.info.pages });
+        });
+    }
+  }
+
 
   render() {
     const { characters, page, totalPages } = this.state;
@@ -40,7 +50,7 @@ export default class AllCharacters extends PureComponent {
       <>
       <div style={ { display: 'flex', flexWrap: 'wrap', width: '100vw', justifyContent: 'center' } }>
         <button onClick={this.decrement}>Previous Page</button>
-        <span>`page ${page} of ${totalPages} `</span>
+        <span>page {page} of {totalPages} </span>
         <button onClick={this.increment}>Next Page</button>
       </div>
       <Characters characters={characters} />
