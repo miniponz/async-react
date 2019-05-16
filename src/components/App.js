@@ -1,11 +1,6 @@
 import React from 'react';
-import TopQuotes from '../containers/TopQuotes';
+import AllCharacters from '../containers/AllCharacters';
 
 export default function App() {
-  return (
-    <>
-    <p>Hello</p>
-    <TopQuotes />
-    </>
-  );
+  return <AllCharacters page={'1'}/>;
 }
