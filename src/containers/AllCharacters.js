@@ -26,20 +26,21 @@ export default class AllCharacters extends PureComponent {
   }
 
   componentDidMount() {
-    getCharacters()
+    getCharacters(this.state.page)
       .then(results => {
         this.setState({ characters: results.results });
         this.setState({ totalPages: results.info.pages });
       });
   }
+  
 
   render() {
-    const { characters, page } = this.state;
+    const { characters, page, totalPages } = this.state;
     return (
       <>
       <div style={ { display: 'flex', flexWrap: 'wrap', width: '100vw', justifyContent: 'center' } }>
         <button onClick={this.decrement}>Previous Page</button>
-        <span>`${page} of `</span>
+        <span>`page ${page} of ${totalPages} `</span>
         <button onClick={this.increment}>Next Page</button>
       </div>
       <Characters characters={characters} />
