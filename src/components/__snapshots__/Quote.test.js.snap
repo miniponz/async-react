@@ -9,3 +9,13 @@ exports[`colors list renders color list 1`] = `
   <p />
 </section>
 `;
+
+exports[`quote componenttttttt renders one quoteeeeeeeeeeee 1`] = `
+<section>
+  <h3 />
+  <img
+    src=""
+  />
+  <p />
+</section>
+`;
