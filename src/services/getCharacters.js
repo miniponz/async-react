@@ -1,5 +1,5 @@
 export default function getCharacters() {
-  return fetch('//rickandmortyapi.com/api/character/')
+  return fetch('https://rickandmortyapi.com/api/character/')
     .then(res => res.json())
     .then(json => json.results);
 }
