@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`character component renders one lonely character 1`] = `
+<section>
+  <h3 />
+  <img
+    src=""
+  />
+  <p />
+  <p />
+</section>
+`;
