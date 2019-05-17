@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`quote componenttttttt renders one quoteeeeeeeeeeee 1`] = `
+exports[`character component renders one lonely character 1`] = `
 <section>
   <h3 />
   <img
     src=""
   />
+  <p />
   <p />
 </section>
 `;
