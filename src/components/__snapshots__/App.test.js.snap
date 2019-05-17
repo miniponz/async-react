@@ -3,10 +3,8 @@
 exports[`Apptest renders App 1`] = `
 <Fragment>
   <p>
-    Hello
+    characterssssssssss
   </p>
-  <TopQuotes
-    count={4}
-  />
+  <AllCharacters />
 </Fragment>
 `;

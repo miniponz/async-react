@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`colors list renders color list 1`] = `
-<section>
-  <h3 />
-  <img
-    src=""
-  />
-  <p />
-</section>
-`;
-
 exports[`quote component renders quotes 1`] = `
 <section>
   <h3 />
